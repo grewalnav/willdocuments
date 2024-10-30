@@ -1,0 +1,31 @@
+<div class="wills">
+<div class="container">
+    <div class="will-form">
+    <h2>Conditions</h2>
+    <div class="btn-new-condition"> 
+        <button type="button" class="btn btn-primary" (click)="onNew()">New</button>
+    </div>
+    @for (condition of willData.conditions; track condition.id){
+        <p (click)="onEdit(condition.id)">{{condition.description}}</p>
+    }
+    </div>
+    @if(newCondition){
+        <div class="will-form">
+            <textarea rows="4" cols="50" class="form-input" id="condition"  [(ngModel)]="condition"></textarea>  
+            <div class="btn-new-condition"> 
+                <button type="button" class="btn btn-primary" (click)="onSave()">Save</button>
+            </div>
+        </div>
+    }@else if(edit){
+        <div class="will-form">
+            <textarea rows="4" cols="50" class="form-input" id="condition"  [(ngModel)]="condition"></textarea>  
+            <div class="btn-new-condition"> 
+                <button type="button" class="btn btn-primary" (click)="onUpdate()">Save</button>
+            </div>
+        </div>
+    }
+    <div class="btn-generate-will"> 
+        <button type="button" class="btn btn-primary" (click)="onGenerate()">Generate Will</button>
+    </div>   
+</div>
+</div>

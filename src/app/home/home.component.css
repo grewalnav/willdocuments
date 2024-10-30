@@ -1,0 +1,19 @@
+
+.willdocs {
+    background-image: url('/assets/image/welcome.jpg');
+    background-size: cover;
+    min-height: 650px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+
+.intro{
+    padding-top: 50px;
+}
+
+.btn-primary{
+    color:black;
+    background-color: #f0f4f8;
+    border: 1px solid black;
+    border-radius: 8px;
+}

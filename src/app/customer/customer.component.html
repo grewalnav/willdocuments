@@ -1,0 +1,18 @@
+<div class="wills">
+<div class="container">
+  <div class="will-form">
+    @if('Mutual' === willData.type){
+      @if(willData.user.complete === true){
+        <h3>Testator 2</h3>
+      }@else{
+        <h3>Testator 1</h3>
+      }
+    }@else {
+      <h3>Testator</h3>
+    }
+    <p>Please complete the following information</p>
+    <app-customer-details customerType="testator"></app-customer-details>
+  </div>  
+</div>
+</div>
+

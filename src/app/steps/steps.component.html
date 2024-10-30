@@ -1,0 +1,15 @@
+<div class="wills">
+    <div class="container">
+    <h2>Select the Will suitable to you</h2>
+    <div class="selection">
+        @for (willOption of willOptionList; track willOption.name){
+            <div class="will-container">
+            <button class="will-select" (click)="onSelectWill(willOption.name)">
+                <h3>{{willOption.name}}</h3>
+                <p>{{willOption.description}}</p>
+            </button>
+            </div>
+        }
+    </div>
+    </div>
+</div>

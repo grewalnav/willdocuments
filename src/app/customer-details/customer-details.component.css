@@ -1,0 +1,44 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.will-form{
+    background-color: #e4ecf3;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-width: 100%;
+    border: #e4ecf3;
+    text-align: center;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+.label {
+    margin-right: 20px; 
+    display: inline-block;
+    margin-bottom: 8px;
+    width: 150px;
+    text-align: left;
+}
+
+.btn-primary{
+    color:black;
+    background-color: #f0f4f8;
+    border: 1px solid black;
+    border-radius: 8px;
+}

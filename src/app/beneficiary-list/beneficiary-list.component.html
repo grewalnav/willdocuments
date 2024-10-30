@@ -1,0 +1,26 @@
+<div class="wills">
+    <div class="container">
+        <div class="will-form">
+            <h2>Beneficiaries</h2>
+            <div class="btn-new-condition"> 
+                <button type="button" class="btn btn-primary" (click)="onNew()">New</button>
+                @if(willData && 'Conditional' === willData.type){
+                    <button type="button" class="btn btn-primary" (click)="onContinue()">Continue</button>
+                }@else{
+                    <button type="button" class="btn btn-primary" (click)="onGenerate()">Generate Will</button>
+                }
+            </div>
+            <div class="beneficiaries">            
+                @for (beneficiary of willData.beneficiaries; track beneficiary.id){
+                        <p>{{beneficiary.firstName}}&nbsp;{{beneficiary.lastName}}</p>
+                }
+            </div>
+        </div>
+        @if(willData.newBeneificiary){
+            <div class="will-form">
+                <app-beneficiaries></app-beneficiaries>
+            </div>
+        }    
+    </div>
+</div>
+    

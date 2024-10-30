@@ -1,0 +1,35 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f4f8;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.selection {
+  display: flex;
+  flex-direction:row;
+}
+
+.container h3 {
+  background-color: #004085;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #f0f4f8;
+}
+
+.will-select{
+  border: none;
+  background-color: #e4ecf3;
+  margin-right: 20px;
+  padding-right: 20px;
+  width: 250px;
+}
+
+.wills{
+  background-image: url('/assets/image/law-theme.jpg');
+  background-size: cover;
+  min-height: 650px;
+}
